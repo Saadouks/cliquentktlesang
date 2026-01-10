@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon premier site</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; }
+    header { background: #222; color: white; padding: 20px; text-align: center; }
+    nav { background: #444; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .container { padding: 20px; }
+    .card { background: white; padding: 15px; margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    footer { background: #222; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+    button { padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenue sur mon site</h1>
+    <p>Mon premier site en HTML</p>
+  </header>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="card" id="accueil">
+      <h2>Accueil</h2>
+      <p>Ceci est mon premier site internet créé avec HTML et un peu de CSS.</p>
+    </div>
+
+    <div class="card" id="apropos">
+      <h2>À propos</h2>
+      <p>J’apprends à créer des sites web. Plus tard je ferai des sites plus complexes.</p>
+    </div>
+
+    <div class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Tu peux me contacter ici :</p>
+      <input type="text" placeholder="Ton nom"><br><br>
+      <input type="email" placeholder="Ton email"><br><br>
+      <textarea placeholder="Ton message"></textarea><br><br>
+      <button onclick="alert('Message envoyé ! (faux)')">Envoyer</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 - Mon site</p>
+  </footer>
+
+</body>
+</html>
